@@ -27,7 +27,7 @@ public class ChatAiController {
                     .content();
             return ResponseEntity.ok(response);
         } catch (Exception e) {
-            return ResponseEntity.badRequest().body("Error , couldnt get data from server: " + e.getMessage());
+            return ResponseEntity.badRequest().body("Error , couldn`t get data from server: " + e.getMessage());
         }
     }
 }
