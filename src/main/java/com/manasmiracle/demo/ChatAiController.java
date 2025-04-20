@@ -17,6 +17,7 @@ public class ChatAiController {
     public ChatAiController(ChatClient.Builder chatClient) {
         this.chatClient = chatClient.build();
     }
+    //controller thats return data
     @GetMapping("/{chat}")
     public ResponseEntity<String> promptWithPathVariable(@PathVariable String chat) {
         try {
